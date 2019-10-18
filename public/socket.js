@@ -2,7 +2,7 @@ var socket
 var name
 var isIdendity = false
 $(function () {
-  socket = io('192.168.2.102', { "autoConnect": false, "reconnection": false })
+  socket = io('http://chat.zykee.net', { "autoConnect": false, "reconnection": false })
   function nameEnter() {
     name = $('#nameInput').val().trim()
     if (name == '') {
