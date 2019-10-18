@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+  <meta charset="utf-8">
+  <title>Socket.IO chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="./socket.io.js">
+</script>
+
+<body class="content">
+  <div class="header">
+    <h2 id='title'>聊天室</h2>
+
+    <div class="enter-item">
+      <input id='nameInput' type="text" placeholder="请输入您的姓名">
+      <button id='nameEnter' class="btn">确定</button>
+    </div>
+  </div>
+  <ul id="messages">
+    <!-- <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li><li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li><li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li>
+    <li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li><li>zykee: asdf</li>
+    <li>zykasdfee: asdf</li> -->
+
+  </ul>
+  <div id='input-div'>
+    <input id="m" type="text"/><button id='btn' class='btn'>Send</button>
+  </div>
+</body>
+<script src="socket.js"></script>
+
+</html>
